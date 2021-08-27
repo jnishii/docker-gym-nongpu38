@@ -8,9 +8,6 @@ release:
 	git tag -a "${VERSION}" -m "version ${VERSION}"
 	git push
 	git push --tags
-#	docker tag ${IMAGE}:latest ${IMAGE}:${VERSION}
-#	docker push ${IMAGE}:latest
-#	docker push ${IMAGE}:$version
 
 build:
 	docker build --force-rm=true -t ${IMAGE}:latest .
@@ -26,6 +23,12 @@ load:
 
 ps:
 	docker ps -a
+
+push:
+	# You should `docker login` before make push
+	docker tag ${IMAGE}:latest ${IMAGE}:${VERSION}
+	docker push ${IMAGE}:${VERSION}
+
 
 clean:
 	rm *~
