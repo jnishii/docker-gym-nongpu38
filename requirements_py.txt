@@ -1,0 +1,29 @@
+# Basic
+numpy
+pandas
+scipy
+scikit-image
+#spyder
+
+# Jupyter
+#jupyter_client==5.3.1
+jupyter_client
+#jupyter_core==4.6.1
+jupyter_core
+jupyter
+jupyterlab
+jupyter_nbextensions_configurator
+
+# visualization
+streamlit
+altair
+matplotlib
+seaborn
+dfply
+plotly
+vega_datasets
+
+# Other
+JSAnimation
+ipywidgets
+pyvirtualdisplay
